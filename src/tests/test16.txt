@@ -1,0 +1,4 @@
+1
+6
+ABCD E F
+EB D AC F
