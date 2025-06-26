@@ -1,4 +1,4 @@
-# Question9-Blocks World Problem
+# Blocks World Problem
 This program solves the Blocks World problem using the A* algorithm. Specifically, the goal of the game is to rearrange blocks from an initial arrangement to a goal state, following specific rules:
 
 - Only one block can be moved at a time.  
