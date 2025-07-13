@@ -29,7 +29,7 @@ In the input.txt file, provide the values in the following order:
 
 For example, for the following state:
 
-![Blocks World Problem](image/example.png)
+![Blocks World Problem](src/image/example.png)
  
 The input.txt file should contain:
 
@@ -163,7 +163,7 @@ Below are two example runs of the program:
 
 ### Example 1
 ```sh
-$ cat input.txt
+$ cat src/input.txt
 1
 5
 CBA ED
@@ -209,13 +209,12 @@ rm -f test main.o pqueue.o state.o vector.o
 ```
 ### Example 2
 ```sh
-$ cat input.txt
+$ cat src/input.txt
 1
 6
 AB CDEF
 BCEAD F
 $ ./run.sh
-./run.sh
 gcc -g3 -Wall -Wextra -Werror -pedantic   -c -o main.o main.c
 gcc -g3 -Wall -Wextra -Werror -pedantic   -c -o pqueue.o pqueue.c
 gcc -g3 -Wall -Wextra -Werror -pedantic   -c -o state.o state.c
@@ -273,10 +272,11 @@ $ ./testing.sh
 You will then be prompted to enter the number of the test you want to run (from 1 to 21 — I created a total of 21 test cases), and the corresponding test case will be executed. Here's an example:
 ### Example Test Case Execution
 ```sh
-$ cat tests/test5.txt
+$ cat src/tests/test5.txt
 2
 5
-ABCD
+ABCD E
+DBCA E
 $  make
 gcc -g3 -Wall -Wextra -Werror -pedantic   -c -o main.o main.c
 gcc -g3 -Wall -Wextra -Werror -pedantic   -c -o pqueue.o pqueue.c
@@ -309,6 +309,8 @@ E DBCA
 real    0m0,002s
 user    0m0,001s
 sys     0m0,000s
+$ make clean
+rm -f test src/main.o src/pqueue.o src/state.o src/vector.o
 ```
 
 ## Sources
